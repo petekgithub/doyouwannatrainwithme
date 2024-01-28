@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trainwithme</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Do you wanna train with me?</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3JmMGM5czVoOHlhcHIycDcxeWticm1sNTY4YnR0d3A1Y2tpYWNtZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/L514bipAgg3r8p2Ove/giphy.gif"
+          alt="muppet"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+                (window.innerWidth -
+                  document.getElementById("noButton").offsetWidth) -
+              85;
+            var y =
+              Math.random() *
+                (window.innerHeight -
+                  document.getElementById("noButton").offsetHeight) -
+              48;
+
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

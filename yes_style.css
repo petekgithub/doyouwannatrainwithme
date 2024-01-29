@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #9486df;
+}
+.header_text {
+  font-family: "Outfit", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

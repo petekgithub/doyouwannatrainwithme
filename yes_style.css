@@ -19,3 +19,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+.back-button {
+  text-align: center;
+}
+#backBtn {
+  background-color: #8c5ace;
+  color: #000000;
+  padding: 10px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}

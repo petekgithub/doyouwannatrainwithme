@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   backBtn.addEventListener("click", (event) => {
     // Navigate to the index.html page
     event.preventDefault();
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
   });
 });
